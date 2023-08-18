@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="end"
+        android:text="0"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Botones numéricos -->
+
+        <!-- Fila 1 -->
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:onClick="onDigitClick"/>
+
+        <!-- Agregar más botones numéricos aquí -->
+
+        <!-- Fila 2 -->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:onClick="onDigitClick"/>
+
+        <!-- Agregar más botones numéricos aquí -->
+
+        <!-- Fila 3 -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:onClick="onDigitClick"/>
+
+        <!-- Agregar más botones numéricos aquí -->
+
+        <!-- Fila 4 -->
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="1"
+            android:onClick="onDigitClick"/>
+
+        <!-- Botones de operación -->
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:onClick="onOperatorClick"/>
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:onClick="onOperatorClick"/>
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:onClick="onOperatorClick"/>
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="÷"
+            android:layout_columnSpan="1"
+            android:layout_rowSpan="1"
+            android:onClick="onOperatorClick"/>
+
+        <!-- Botones de igual y borrar -->
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="1"
+            android:onClick="onEqualClick"/>
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="1"
+            android:onClick="onClearClick"/>
+    </GridLayout>
+</LinearLayout>

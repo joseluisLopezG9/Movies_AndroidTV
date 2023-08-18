@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.Calculadora_AndroidTV" parent="@style/Theme.Leanback" />
+</resources>
